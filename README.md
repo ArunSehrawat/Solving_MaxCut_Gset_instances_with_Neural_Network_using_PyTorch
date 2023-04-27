@@ -25,10 +25,10 @@ The max-cut problem has important applications in various fields, including comp
 [3]:https://web.stanford.edu/~yyye/yyye/Gset
 
 
-# Minimizer Neural Network (MNN)
+## Minimizer Neural Network (MNN)
 
 We are using Multi-Layer Perceptron (MLP) as our Minimizer Neural Network. The MLP takes an $m$-component learnable vector $\textbf{x}$ as input, passes it through $L$ layers with learnable parameters 
-$\boldsymbol{\theta}:=\{\theta^{[1]},\cdots,\theta^{[L]}\}$, and gives an
+$\boldsymbol{\theta}:=\{\theta^{1},\cdots,\theta^{L}\}$, and gives an
 $n$-component output vector $\textbf{z}$. Each component of $\textbf{z}$ lies in the interval 
 $[-1, 1]$. As a whole, Multi-Layer Perceptron acts as a continuous (differentiable) function 
 

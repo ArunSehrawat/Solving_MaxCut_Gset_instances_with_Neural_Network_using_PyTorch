@@ -27,7 +27,8 @@ The max-cut problem has important applications in various fields, including comp
 
 ## Minimizer Neural Network (MNN) 
 
-file:///home/qpi/Documents/QML/QGNN/QUBO_with_GD/QUBO_GNN/MLP_MaxCut.png
+![MLP_MaxCut](https://user-images.githubusercontent.com/99533657/234844153-31e3c7d7-4479-4be2-b812-192bd3db5365.png)
+
 
 We are using Multi-Layer Perceptron (MLP) as our Minimizer Neural Network. The MLP takes an $m$-component learnable vector $\textbf{x}$ as input, passes it through $L$ layers with learnable parameters 
 $\boldsymbol{\theta}:=(\theta^{1},\cdots,\theta^{L})$, and gives an

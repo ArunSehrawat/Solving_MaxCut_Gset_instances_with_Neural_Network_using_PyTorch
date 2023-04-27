@@ -45,7 +45,9 @@ to achieve a max-cut solution (for example, displayed by the graph below).
 
 
 
-'Best known max cut value for G14 = 3064 given in https://www.sciencedirect.com/science/article/abs/pii/S0952197612002175'
+Best known max cut value, for example, for G14 = 3064 given in [Una Benlic and Jin-Kao Hao, Breakout Local Search for the Max-Cut problem][4]
+
+
 
 
 [1]:https://en.wikipedia.org/wiki/Maximum_cut
@@ -53,4 +55,6 @@ to achieve a max-cut solution (for example, displayed by the graph below).
 [2]:https://doi.org/10.3389/fphy.2014.00005
 
 [3]:https://web.stanford.edu/~yyye/yyye/Gset
+
+[4]:https://www.sciencedirect.com/science/article/abs/pii/S0952197612002175
 

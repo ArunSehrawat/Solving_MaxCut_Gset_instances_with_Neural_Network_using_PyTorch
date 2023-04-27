@@ -1,0 +1,1 @@
+# Solving_MaxCut_Gset_instances_with_Neural_Network_using_PyTorch

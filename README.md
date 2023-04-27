@@ -5,7 +5,7 @@ Given an undirected graph $\mathcal{G=(V,E)}$, where $\mathcal{V}$ is the set of
 
 
 
-$cut value =\sum_{i<j} w_{ij}\frac{1-z_i z_j}{2} = \frac{1}{2}(total weight - E)$
+$cut value =\sum_{ij} w_{ij}\frac{1-z_i z_j}{2} = \frac{1}{2}(total weight - E)$
 
 $\text{total weight} = \sum_{i<j} w_{ij}$ is a constant.
 

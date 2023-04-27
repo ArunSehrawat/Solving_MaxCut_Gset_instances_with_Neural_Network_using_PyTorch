@@ -23,3 +23,26 @@ The max-cut problem has important applications in various fields, including comp
 [2]:https://doi.org/10.3389/fphy.2014.00005
 
 [3]:https://web.stanford.edu/~yyye/yyye/Gset
+
+
+# Minimizer Neural Network (MNN)
+
+We are using Multi-Layer Perceptron (MLP) as our Minimizer Neural Network. The MLP takes an $m$-component learnable vector $\textbf{x}$ as input, passes it through $L$ layers with learnable parameters 
+$\boldsymbol{\theta}:=\{\theta^{[1]},\cdots,\theta^{[L]}\}$, and gives an
+$n$-component output vector $\textbf{z}$. Each component of $\textbf{z}$ lies in the interval 
+$[-1, 1]$. As a whole, Multi-Layer Perceptron acts as a continuous (differentiable) function 
+
+$f: \mathbb{R}^K \longrightarrow [-1,1]$ such that
+
+$f(\textbf{x},\boldsymbol{\theta})=\textbf{z}$ and $K$ is the total number of learnable parameters.
+
+We feed the output $\textbf{z}$ into the $\text{loss}(\textbf{x},\boldsymbol{\theta})=\text{energy}(\textbf{z})$ and minimize it with Adam optimizer.
+After minimization, we got $\textbf{z}_{\text{out}}$, whose components we map to discrete values as
+
+$z \longrightarrow 1$ and $-1$ for $z<0$ and $z\leq0$, respectively
+
+to achieve a max-cut solution (displayed by the graph below).
+
+
+
+![MLP_MaxCut.png](attachment:MLP_MaxCut.png)

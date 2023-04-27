@@ -18,13 +18,6 @@ over the dichotomic variables $z_i = +1,-1$ if the node $i\in \mathcal{S}, \math
 The max-cut problem has important applications in various fields, including computer vision, statistical physics, and computational biology. It is also known to be NP-hard, which means that it is computationally difficult to solve optimally for large instances of the problem. Therefore, various approximation algorithms and heuristics have been developed to tackle the problem.
 
 
-[1]:https://en.wikipedia.org/wiki/Maximum_cut
-
-[2]:https://doi.org/10.3389/fphy.2014.00005
-
-[3]:https://web.stanford.edu/~yyye/yyye/Gset
-
-
 ## Minimizer Neural Network (MNN) 
 
 ![MLP_MaxCut](https://user-images.githubusercontent.com/99533657/234844153-31e3c7d7-4479-4be2-b812-192bd3db5365.png)
@@ -42,11 +35,22 @@ $f(\textbf{x},\boldsymbol{\theta})=\textbf{z}$ and $K$ is the total number of le
 We feed the output $\textbf{z}$ into the $\text{loss}(\textbf{x},\boldsymbol{\theta})=\text{energy}(\textbf{z})$ and minimize it with Adam optimizer.
 After minimization, we got $\textbf{z}_{\text{out}}$, whose components we map to discrete values as
 
-$z \longrightarrow 1$ and $-1$ for $z<0$ and $z\leq0$, respectively
+$z \longrightarrow 1$ and $-1$ for $z>0$ and $z\leq0$, respectively
 
 to achieve a max-cut solution (for example, displayed by the graph below).
 
 ![G14_sol](https://user-images.githubusercontent.com/99533657/234843909-9b8c16b0-6a60-4974-9472-d5034c8c9d4b.png)
 
 
+
+
+
+'Best known max cut value for G14 = 3064 given in https://www.sciencedirect.com/science/article/abs/pii/S0952197612002175'
+
+
+[1]:https://en.wikipedia.org/wiki/Maximum_cut
+
+[2]:https://doi.org/10.3389/fphy.2014.00005
+
+[3]:https://web.stanford.edu/~yyye/yyye/Gset
 

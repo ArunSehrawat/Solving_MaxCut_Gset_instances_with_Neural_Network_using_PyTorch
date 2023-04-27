@@ -1,12 +1,11 @@
-# Solving Max-Cut Gset instances with Neural Network using PyTorch
+# Solving [Max-cut problem][1] [Gset instances][3] with Neural Network using PyTorch
 
-# [Max-cut problem][1]
 
 Given an undirected graph $\mathcal{G=(V,E)}$, where $\mathcal{V}$ is the set of nodes and $\mathcal{E}$ is the set of edges, the max-cut problem asks to partition $\mathcal{V}$ into two disjoint sets, say $\mathcal{S}$ and $\mathcal{T}$, such that the sum of the weights of the edges---called the cut value---of edges between $\mathcal{S}$ and $\mathcal{T}$ maximized. 
 
 
 
-$\text{cut value} =\sum_{i<j} w_{ij}\frac{1-z_i z_j}{2} = \frac{1}{2}(\text{total weight} - E)$
+$cut value =\sum_{i<j} w_{ij}\frac{1-z_i z_j}{2} = \frac{1}{2}(total weight - E)$
 
 $\text{total weight} = \sum_{i<j} w_{ij}$ is a constant.
 
@@ -22,5 +21,6 @@ The max-cut problem has important applications in various fields, including comp
 
 [1]:https://en.wikipedia.org/wiki/Maximum_cut
 
-
 [2]:https://doi.org/10.3389/fphy.2014.00005
+
+[3]:https://web.stanford.edu/~yyye/yyye/Gset
